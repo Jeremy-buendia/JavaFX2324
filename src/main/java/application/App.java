@@ -1,12 +1,5 @@
 package application;
 
-import java.io.FileOutputStream;
-
-import com.itextpdf.text.Document;
-import com.itextpdf.text.Image;
-import com.itextpdf.text.Paragraph;
-import com.itextpdf.text.pdf.PdfWriter;
-
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
@@ -69,36 +62,36 @@ public class App extends Application {
 	public static void main(String[] args) {
 		launch();
 
-		try {
-			// Crear un documento
-			Document document = new Document();
-
-			// PDF
-			FileOutputStream pdfFile = new FileOutputStream("fichero.pdf");
-
-			// asociar el documento al OutputStream
-			PdfWriter.getInstance(document, pdfFile);
-
-			// abrir el documento
-			document.open();
-
-			// agregar un párrafo
-			document.add(new Paragraph("¡Hola, mundo! Este es mi primer PDF con iText."));
-
-			// Agreagar una imagen (reemplaza 'pingu.png' con la ruta de tu imagen)
-			Image image = Image.getInstance("img/imagen.png");
-			// Ajustar el tamaño de la imagen
-			image.scaleToFit(200, 200);
-
-			document.add(image);
-
-			// Cerrar el documento
-			document.close();
-
-			System.out.println("Archivo PDF creado correctamente");
-		} catch (Exception e) {
-
-		}
+//		try {
+//			// Crear un documento
+//			Document document = new Document();
+//
+//			// PDF
+//			FileOutputStream pdfFile = new FileOutputStream("fichero.pdf");
+//
+//			// asociar el documento al OutputStream
+//			PdfWriter.getInstance(document, pdfFile);
+//
+//			// abrir el documento
+//			document.open();
+//
+//			// agregar un párrafo
+//			document.add(new Paragraph("¡Hola, mundo! Este es mi primer PDF con iText."));
+//
+//			// Agreagar una imagen (reemplaza 'pingu.png' con la ruta de tu imagen)
+//			Image image = Image.getInstance("img/imagen.png");
+//			// Ajustar el tamaño de la imagen
+//			image.scaleToFit(200, 200);
+//
+//			document.add(image);
+//
+//			// Cerrar el documento
+//			document.close();
+//
+//			System.out.println("Archivo PDF creado correctamente");
+//		} catch (Exception e) {
+//
+//		}
 
 	}
 
