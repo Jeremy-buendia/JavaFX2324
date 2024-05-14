@@ -31,6 +31,8 @@ public class App extends Application {
 		Label lblNombre = new Label("Nombre:");
 		TextField txtNombre = new TextField("Pedro");
 		CheckBox cbxTerms = new CheckBox("Acepto los Terminos y Condiciones");
+//		cbxTerms.getText();
+//		cbxTerms.isSelected();
 		ChoiceBox chbCiudades = new ChoiceBox();
 		Button btnBoton = new Button("Aceptar");
 
